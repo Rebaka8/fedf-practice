@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+        <title>CatPhotoApp</title>
+    </head>
+    <body>
+        <h1>
+            Welcome to CatPhotoApp!
+        </h1>
+        <main>
+            <h2>Cat Photos</h2>
+        <!--TODO:  add link to cat photos-->
+        <p>Click here to view more <a href="#" target="_blank">cat photos</a></p>
+      
+        <a href="#" target="_blank" ><img src="https://as2.ftcdn.net/v2/jpg/00/74/15/95/1000_F_74159556_67n5823V7Ei87a4g6JJnYHC0yMSo1AEy.jpg" width ="50%" height="50%"  alt="A cute orange cat lying on its back."></a>
+<h2>Cat Lists</h2>
+<div class="lists">
+<p>Things cats <em>love:</em> </p>
+<ul> 
+    <li> cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+</ul>
+<img src="lasagna.jpg" width="300px" height="250px" alt="A generous slice of lasagna with layers of pasta, meat sauce, and melted cheese sits on a white plate on a dark table, evoking a warm and comforting feeling">
+<p>Things cats <strong>hate:</strong></p>
+<ol>
+<li>flea treatment</li>
+<li>thunder</li>
+<li>other cats</li>
+</ol>
+</div>
+<img src="cats.jpg" width="400px" height="500px" alt="two cats in a picture">
+<form action="/submit-cat-photo" method ="post">
+    <label for="indoor"><input type="radio" id="indoor" name="indoor-outdoor" checked >indoor</label>
+    <label for="outdoor"><input type="radio" id="outdoor" name ="indoor-outdoor"> outdoor</label><br>
+    <label for="loving"><input type="checkbox" id="loving" name="loving" checked>Loving</label> 
+    <label for="lazy"><input type="checkbox" id="lazy" name="lazy">Lazy</label>
+    <label for="energitic"><input type="checkbox" id="energetic" name="energetic">Energetic</label>
+<br>
+<input type="text" name="catPhotoURL" required placeholder="cat photo URL"></input>
+<button type="submit">Submit</button>
+</form>
+
+    </main>
+    <footer>
+        <p><small>No Copyright - <a href="https://freecodecamp.org" target="_blank">freeCodeCamp.org</a></p></small>
+    </footer>
+    </body>
+</html>
