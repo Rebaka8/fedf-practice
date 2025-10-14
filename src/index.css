@@ -152,3 +152,42 @@ margin: 10px;
   margin: 20px;
   margin-left:30px;
 }
+.counter-container{
+  text-align:  center;
+  font-family: Arial, sans-serif;
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+  justify-content: center;
+  align-items: center;
+
+}
+.count-display{
+  font-size: 10em;
+ margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.counter-button{
+width:150px;
+  height: 50px;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin:  0px 10px;
+  border-radius: 8px;
+  border: 1px solid hsl(0, 0%, 81%);
+  background-color: hsl(192, 93%, 70%);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.counter-button:hover{
+  background-color: hsl(192, 93%, 60%);
+}
+.button-group {
+  display: flex;
+  gap: 10px;
+}

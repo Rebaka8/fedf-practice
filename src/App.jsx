@@ -8,6 +8,9 @@ import UserGreeting from './UserGreeting.jsx'
 import Lists from './Lists.jsx'
 import List1 from './List1.jsx'
 import ProfilePic from './ProfilePic.jsx'
+import MyComponent from './MyComponent.jsx'
+import Counter from './Counter.jsx'
+
 
 function App() {
   const fruits =[{name: "Apple:", calories : 95},
@@ -58,10 +61,16 @@ function App() {
 ,where thevaulue is resulted only if the first expression is true*/} 
 {fruits.length>0  && <List1 items={fruits} title="Fruits List"/> }
 {vegetables.length>0  && <List1 items={vegetables} title="Vegetables List"/> }
-
+<p><b>~List example</b></p>
       <Food />
-      <Button />
 
+<p><b>~useState</b></p>
+<MyComponent/>
+<p><b>~Counter</b></p>
+<Counter />
+<p><b>~Button</b></p>
+      <Button />
+<p> <b>~Footer</b></p>
       <Footer />
     </>
   );
