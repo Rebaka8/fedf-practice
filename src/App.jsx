@@ -10,7 +10,8 @@ import List1 from './List1.jsx'
 import ProfilePic from './ProfilePic.jsx'
 import MyComponent from './MyComponent.jsx'
 import Counter from './Counter.jsx'
-
+import EventHandler from'./EventHandler'
+import ColorPicker from './ColorPicker.jsx'
 
 function App() {
   const fruits =[{name: "Apple:", calories : 95},
@@ -30,12 +31,13 @@ function App() {
   return(
     <>
       <Header />
-      
-      <>
+      <hr></hr>
+      <p><b>~Event Handler</b></p>
+<EventHandler />
       <p><strong>~Conditional rendering</strong></p>
       <UserGreeting isLoggedIn={true} username="Rebaka Meda"/>
 
-</>
+
   <p><b>~Profile Picture</b></p>
   <ProfilePic/>
       <>
@@ -52,6 +54,7 @@ function App() {
         <p><strong>~cards</strong></p>
         <Card />
       </section>
+      <hr></hr>
        <p><strong>~Lists</strong></p>
   
 <Lists/>
@@ -61,15 +64,21 @@ function App() {
 ,where thevaulue is resulted only if the first expression is true*/} 
 {fruits.length>0  && <List1 items={fruits} title="Fruits List"/> }
 {vegetables.length>0  && <List1 items={vegetables} title="Vegetables List"/> }
+<hr></hr>
 <p><b>~List example</b></p>
       <Food />
-
+<hr></hr>
 <p><b>~useState</b></p>
 <MyComponent/>
+<hr></hr>
 <p><b>~Counter</b></p>
 <Counter />
+<hr></hr>
+<ColorPicker/>
+<hr></hr>
 <p><b>~Button</b></p>
       <Button />
+      <hr></hr>
 <p> <b>~Footer</b></p>
       <Footer />
     </>

@@ -26,4 +26,17 @@ function Counter(){
         </div>
     );
 }
+{/* 
+   //update function = A function passed as an argument to useState() usually to update the state value.
+   ex: setCount(count + 1);
+   //here we are using the current state of count to calculate the next state after using a setter function
+   //State value = The current value stored in a state variable.
+   ex: const [count, setCount] = useState(0);
+
+  // alllow for safe updates based on th eprevious state value.
+  // This is particularly useful when the new state depends on the old state.
+    ex: setCount(prevCount => prevCount + 1);
+    //used with multiple state updates and asynchronus functions
+//It is a good practice to use the functional form of the state update when the new state depends on the previous state.
+    */}
 export default Counter;
