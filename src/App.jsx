@@ -12,7 +12,7 @@ import MyComponent from './MyComponent.jsx'
 import Counter from './Counter.jsx'
 import EventHandler from'./EventHandler'
 import ColorPicker from './ColorPicker.jsx'
-
+import MyComponent1 from './MyComponent1.jsx'
 function App() {
   const fruits =[{name: "Apple:", calories : 95},
                {name: "Banana:", calories : 105},
@@ -65,11 +65,13 @@ function App() {
 {fruits.length>0  && <List1 items={fruits} title="Fruits List"/> }
 {vegetables.length>0  && <List1 items={vegetables} title="Vegetables List"/> }
 <hr></hr>
-<p><b>~List example</b></p>
+<p><b>~updating the state of array</b></p>
       <Food />
 <hr></hr>
 <p><b>~useState</b></p>
 <MyComponent/>
+<p><b>~useState with object</b></p>
+<MyComponent1/>
 <hr></hr>
 <p><b>~Counter</b></p>
 <Counter />

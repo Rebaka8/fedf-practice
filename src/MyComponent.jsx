@@ -1,4 +1,4 @@
-//React hook = special function that allowsfunctional components to use features 
+//React hook = special function that allows functional components to use features 
 //             without using class components (React v16.8)
 //             (useState, useEffect, useContext,useReducer, useRef, useMemo, useCallback)
 

@@ -13,7 +13,6 @@ return(
    </div>
    <label>Select a color: </label>
    <input type ="color" value ={color} onChange={handleColorChange}/>
-  
   <style jsx>{`
   .color-picker-container{
   display : flex;
@@ -26,7 +25,7 @@ return(
           align-items: center;
           margin: 20px;
         }
-        h1 {
+        .color-picker-container h1 {
           margin: 50px;
           color: #14e411;
         }
@@ -50,6 +49,7 @@ return(
           border:2px solid #14e411;
   }
       `}</style>
+  
    </div>
 );
 }
