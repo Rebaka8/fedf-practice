@@ -13,6 +13,8 @@ import Counter from './Counter.jsx'
 import EventHandler from'./EventHandler'
 import ColorPicker from './ColorPicker.jsx'
 import MyComponent1 from './MyComponent1.jsx'
+import MyComponent2 from'./MyComponent2.jsx'
+import ToDoList from './ToDoList.jsx'
 function App() {
   const fruits =[{name: "Apple:", calories : 95},
                {name: "Banana:", calories : 105},
@@ -32,7 +34,7 @@ function App() {
     <>
       <Header />
       <hr></hr>
-      <p><b>~Event Handler</b></p>
+      <p><b>~ on change Event Handler</b></p>
 <EventHandler />
       <p><strong>~Conditional rendering</strong></p>
       <UserGreeting isLoggedIn={true} username="Rebaka Meda"/>
@@ -70,13 +72,20 @@ function App() {
 <hr></hr>
 <p><b>~useState</b></p>
 <MyComponent/>
+<hr></hr>
 <p><b>~useState with object</b></p>
 <MyComponent1/>
+<hr></hr>
+<p><b>~useState with array of objects</b></p>
+<MyComponent2/>
 <hr></hr>
 <p><b>~Counter</b></p>
 <Counter />
 <hr></hr>
 <ColorPicker/>
+<hr></hr>
+<p><b>~To Do List</b></p>
+<ToDoList/>
 <hr></hr>
 <p><b>~Button</b></p>
       <Button />

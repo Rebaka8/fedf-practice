@@ -13,6 +13,10 @@ setfoods(f =>[...f,newFood]);
     function handleRemoveFood(index){
         //using uderscore indicates that the parameter being passed to the function is being ignored
        setfoods(foods.filter((_,i)=> i !==index)) 
+       //foods.filter((_, i) => i !== index) creates a new array including every item except the one whose position matches index.
+   // The underscore _ means we don’t care about the element value — only its index matters.
+   // The function you give to filter() returns true to keep the item, or false to exclude it.
+
     }
    
     return(
