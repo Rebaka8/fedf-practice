@@ -15,6 +15,7 @@ import ColorPicker from './ColorPicker.jsx'
 import MyComponent1 from './MyComponent1.jsx'
 import MyComponent2 from'./MyComponent2.jsx'
 import ToDoList from './ToDoList.jsx'
+import MyComponent3 from './MyComponent3.jsx'
 function App() {
   const fruits =[{name: "Apple:", calories : 95},
                {name: "Banana:", calories : 105},
@@ -78,6 +79,9 @@ function App() {
 <hr></hr>
 <p><b>~useState with array of objects</b></p>
 <MyComponent2/>
+<hr></hr>
+<p><b>~useEffect</b></p>
+<MyComponent3/>
 <hr></hr>
 <p><b>~Counter</b></p>
 <Counter />
